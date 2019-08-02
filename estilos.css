@@ -1,0 +1,100 @@
+*{
+   margin: 5px;
+   padding: 10px;
+   box-sizing: border-box; 
+}
+.container{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "nav nav nav"
+                        "aside section section"
+                        "footer footer footer";
+}
+header{
+    background-color: yellowgreen;
+    grid-area: header;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-color: thistle;
+    grid-area: nav;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+aside{
+    background-color: aquamarine;
+    grid-area: aside;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    background-color: violet;
+    grid-area: section;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-areas: "a4 a2"
+                        "a3 a1";
+}
+
+#a1{
+    background-color: blueviolet;
+    grid-area: a1;
+}
+#a2{
+    background-color: blueviolet;
+    grid-area: a2;
+}
+#a3{
+    background-color: blueviolet;
+    grid-area: a3;
+}
+#a4{
+    background-color: blueviolet;
+    grid-area: a4;
+}
+footer{
+    background-color: black;
+    color: white;
+    grid-area: footer;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width:900px){
+    .container{
+        display: grid;
+        grid-template-areas: "header"
+                            "nav "
+                            "section"
+                            "aside"
+                            "footer";
+    }
+    section{
+        background-color: violet;
+        grid-area: section;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: grid;
+        grid-template-areas: "a1"
+                            "a2"
+                            "a3"
+                            "a4";
+    }
+    
+}
