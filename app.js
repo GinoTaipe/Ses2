@@ -6,5 +6,6 @@ window.onload=function(){
 
     function saludo(){
         alert('Hola '+nombre.value);
+        alert('djlsjdlsjdlsndfolsndls');
     }
 }
